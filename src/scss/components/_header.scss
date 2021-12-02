@@ -1,0 +1,161 @@
+.header
+{
+    position: sticky;
+    width: 100%;
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1.875rem;
+    transition: all .4s linear;
+    z-index: var(--sticky-index);
+    margin-top: 1.875rem;
+    &__container
+    {
+        width: 100%;
+    }
+    &__inner
+    {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__row
+    {
+        display: flex;
+        align-items: center;
+        &:first-child
+        {
+            .header__logo > img
+            {
+                height: 4.375rem;
+                object-fit: contain;
+            }
+            .nav
+            {
+                margin-left: 4.9375rem;
+                &__list
+                {
+                   display: flex;
+                   align-items: center;
+                }
+                &__item
+                {
+                    height: 4.375rem;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 1.5rem;
+                    position: relative;
+                    transition: all .2s ease-in-out;
+                    &::after
+                    {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        display: block;
+                        width: 0;
+                        opacity: 0;
+                        transition: all .2s ease-in-out;;
+                        height: 0.125rem;
+                        background-color: var(--color-primary);
+                    }
+                    &:hover
+                    {
+                        &::after
+                        {
+                            opacity: 1 !important;
+                            width: 100% !important;
+                        }
+                        .nav__link
+                        {
+                            color: var(--color-primary);
+                        }
+                    }
+                }
+                &__link
+                {
+                    text-align: center;
+                    font-family: var(--font-gilory-semibold);
+                    color: var(--first-color);
+                    transition: all .2s ease-in-out;
+                    font-size: 1rem;
+                }
+            }
+        }
+        &:last-child
+        {
+            display: flex;
+            align-items: center;
+            .header__contacts
+            {
+                display: flex;
+                align-items: center;
+                &--map
+                {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 2.8125rem;
+                    .row
+                    {
+                        margin-left: 1.25rem;
+                        a
+                        {
+                            display: block;
+                            font-size: 0.75rem;
+                            color: #015AA9;
+                            &:hover
+                            {
+                                text-decoration: underline;
+                            }
+                        }
+                        span
+                        {
+                            font-size: 0.875rem;
+                            text-align: left;
+                            margin-bottom: 0.0625rem;
+                            font-family: var(--font-semibold);
+                        }
+                    }
+                }
+                &--phone
+                {
+                    display: flex;
+                    align-items: center;
+                    .row
+                    {
+                        display: flex;
+                        align-items: center;
+                        &:first-child
+                        {
+                            margin-right: 2.1875rem;
+                            span
+                            {
+                                margin: 0 1rem;
+                                color: var(--first-color);
+                                opacity: 0.2;
+                            }
+                            a
+                            {
+                                font-family: var(--font-gilory-semibold);
+                                color: var(--first-color);
+                                text-align: center;
+                            }
+                        }
+                        &:last-child
+                        {
+                            display: flex;
+                            align-items: center;
+                            img
+                            {
+                                padding: 1rem;
+                                background-color: var(--color-icon);
+                                border-radius: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

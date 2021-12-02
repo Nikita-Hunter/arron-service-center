@@ -1,0 +1,43 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  --first-color: #13171D;
+  --first-color-dark: ;
+  --text-color: #444444;
+  --body-color: #E5E5E5;
+  --color-white: #ffffff;
+  --span-color-light: #DCE0E2;
+  --color-primary: #E2001A;
+  --color-primary-hover: #FC142F;
+  --color-icon: #E2001A1A;
+  --color-icon-hover: #E2001A;
+  --body-font: 1.125rem;
+  --h1-font-size: 6.875rem;
+  --h2-font-size: 5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 16px;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-reqular: 400;
+  --font-light: 300;
+  --font-gilory: 'Gilroy Normal';
+  --font-bebas: 'Bebas Neue';
+  --font-gilory-semibold: 'Gilroy Semibold';
+  --mb-1: 1rem;
+  --mb-2: 1.25rem;
+  --md-3: 2.5rem;
+  --mb-4: 3rem;
+  // --mb-5: ;
+  // --mb-6: ;
+  --sticky-index: 10;
+  --fixed-index: 100;
+}
+@media screen and (max-width: 991px) {
+/* стили для больших планшетов - начало */
+}
+@media screen and (max-width: 767px) {
+/* стили для средних планшетов - начало */
+}
+@media screen and (max-width: 479px) {
+  /* стили для телефонов - начало */
+}
